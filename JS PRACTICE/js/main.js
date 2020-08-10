@@ -168,6 +168,157 @@ bind(person2, logPerson)()
 
 // NEXT JAVA NR 4
 
+// ------------------------------------
+
+//Асинхронность  EVENT LOOP / JS SETTIMEOUT
+
+// *setTimeout
+
+// console.log('start')
+
+// function timeout2sec() {
+//     console.log('timeout2sec')
+// }
+
+// window.setTimeout(function() {
+//     console.log('inside timeout, after 5000 seconds')
+// }, 5000)
+
+// setTimeout(timeout2sec, 2000)
+
+// console.log('end')
+
+// console.log('start')
+
+// setTimeout( function () {
+//     console.log('SHow me again yu motherfucker')
+// }, 2000)
+
+// console.log('END')
+
+// -----------------------
+
+// Урок 5. JavaScript. Promise. Что это, как работает (+ пример)
+
+// console.log('Request data...')
+
+// setTimeout(() => {
+//     console.log('Preparing data...')
+    
+    // const backendData = {
+    //     server: 'aws',
+    //     port: 2000,
+    //     status: 'working'
+    // }
+
+//     setTimeout(() => {
+//         backendData.modified = true
+//         console.log('Data received', backendData)
+//     }, 2000)
+// }, 2000)
+
+// Acum fix acelasi lucru ca si sus doar cu ajutorul "Promise"
+
+// const p = new Promise(function(resolve, reject) {
+//     setTimeout(() => {
+//         console.log('Preparing data...')
+//         const backendData = {
+//         server: 'aws',
+//         port: 2000,
+//         status: 'working'
+//       }
+//       resolve(backendData)
+//     }, 2000)
+// })
+
+// p.then(data => {
+//     console.log('promise resolved', data)
+// })  [EXEMPLU NR 1]
+
+// p.then(data => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//         data.modified = true
+//         resolve(data)
+//         // console.log('Data received', backendData)
+//       }, 2000)
+//     }).then(clientData => {
+//         clientData.fromPromise = true
+//         return clientData
+//     }).then(data => {
+//         console.log('Modified', data)
+//     })
+//     .catch(err => console.error('Error:', err))
+//     .finally(() => console.log('Finally'))
+// })
+
+
+// const sleep = ms => {
+//    return new Promise(resolve => {
+//        setTimeout(() => resolve(), ms)
+//    })
+// }
+
+// sleep(2000).then(() => console.log('After 2 sec'))
+// sleep(3000).then(() => console.log('After 3 sec'))
+
+// Promise.all([sleep(2000), sleep(5000)])
+// .then(() => {
+//     console.log('All promises')
+// })
+
+// Promise.race([sleep(2000), sleep(5000)])
+// .then(() => {
+//     console.log('race promises')
+// })
+
+
+// Урок 6. JavaScript. Объекты с Object.create. Что такое getters, setters
+
+const person = Object.create(
+{
+    calculateAge() {
+        console.log('age', new Date().getFullYear() - this.birthYear)
+    }
+
+},
+
+{
+
+    name: {
+        value: 'Vladislav',
+        enumerable: true,
+        writable: true,
+        configurable: true
+    },
+    birthYear: {
+        value: 1993,
+        enumerable: false,
+        writable: false,
+        configurable: false
+
+    },
+    age:{
+        get() {
+            return new Date().getFullYear() - this.birthYear
+        },
+        set(value) {
+            document.body.style.background = 'yellow'
+            console.log('set age', value)
+        }
+    }
+})
+
+// person.name = "Maxim"
+
+for (let key in person) {
+    if (person.hasOwnProperty(key)) {
+        console.log('Key', key, person[key])
+    }
+    
+}
+
+// Урок 7. JavaScript. Все о ES6 Классах (+ Практическое Применение)
 
 
 
