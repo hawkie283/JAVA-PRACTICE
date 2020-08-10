@@ -1,0 +1,48 @@
+.process-learn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 50px;
+
+}
+
+.process-learn-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.process-learn-img{
+    text-align: center;
+}
+
+
+.process-learn-title{
+    color: red;
+    text-align: center;
+}
+
+
+.procces-learn-text{
+    text-align: left;
+    max-width: 300px;
+}
+
+.process-learn-btn{
+    text-align: left;
+    margin-top: 50px;
+}
+
+.process-learn-btn-link{
+    width: 180px;
+    background: #FEC300;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    margin: auto 0 0 0;
+    text-align: center;
+}
+
+.process-learn-btn-link:hover{
+    color: #fff;
+}
+
