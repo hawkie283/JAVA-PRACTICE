@@ -320,6 +320,441 @@ for (let key in person) {
 
 // Урок 7. JavaScript. Все о ES6 Классах (+ Практическое Применение)
 
+// if else statement.....
+
+// var classTemperature = 80; 
+// initial este scris '100' pentru ca variabila sa fie adevarata, dupa ce a fost modificat cu cifra 80
+
+// if (classTemperature == 100) {
+//     classTemperature = classTemperature - 20;
+
+//     document.write ('ClassTemperature just changed to' + classTemperature + "<br>")
+// }
+
+// document.write('outside of if statement')
+
+
+// if ... else statement
+
+// var classTemperature = 80; 
+
+// if (classTemperature == 100) {
+//     classTemperature = classTemperature - 20;
+
+//     document.write ('ClassTemperature just changed to' + classTemperature + "<br>")
+// } else {
+//     document.write ('No need to change this statement')
+// }
+
+
+
+// var classTemperature = 80; 
+
+// if (classTemperature == 100) {
+//     classTemperature = classTemperature - 20;
+
+//     document.write ('ClassTemperature just changed to' + classTemperature + "<br>")
+// } else if (classTemperature == 80) {
+//     classTemperature = classTemperature -10;
+//     document.write ('ClassTemperature just changed to' + classTemperature + "<br>")
+// } else {
+//     document.write ('No need to change')
+// }
+
+// ''Ternary operator EXAMPLE''
+
+// var classTemperature = 70;
+
+// var classTemperatureStatus = (classTemperature == 100) ? classTemperature - 20 : classTemperature;
+
+// document.write("Class current temperature is" + classTemperatureStatus + '<br>');
+
+// ''--------- JAVA SCRIPT CONDITIOND AND DECISIONS
+// COMPARISION OPERATORS: ==; ===; !=; !==, <, >, <=, >= ''
+
+// == EQUAL To
+// === EQUAL VALUE & Type
+// != NOT EQUAL To
+// !== NOT EQUAL VALUE & NOT TYPE 
+// >  GREATER THAN  
+// < LESS THAN  
+// >= GREATER THAN EQUAL TO  
+// <= LESS THAN EQUAL TO 
+
+
+// var studentAge = "18";
+
+//equal to 
+
+ /*if (studentAge == 18) {
+    document.write("Student age value is equal to 18 <br>")
+}
+
+
+// EQUAL VALUE & Type
+
+if (studentAge === 18) {
+    document.write("Student age value and type is equal to 18 <br>")
+} */
+
+// NOT EQUAL To
+
+// var studentAge = "18";
+
+// if (studentAge != 18) {
+//     document.write("Student age value and type is not equal to 18 <br>")
+// }
+
+
+
+// NOT EQUAL VALUE & NOT TYPE 
+
+// if (studentAge !== 18) {
+//     document.write("Student age value or type is not same <br>")
+// }
+
+
+// GREATER THAN  
+
+// var studentAge = 15;
+
+// if (studentAge > 18) {
+//     document.write("Student age value is greater than 18 <br>")
+// }
+
+// // LESS THAN  
+
+// if (studentAge < 18) {
+//     document.write("Student age value is less than 18 <br>")
+// }
+
+
+// // GREATER THAN EQUAL TO 
+// if (studentAge >= 18) {
+//     document.write("Student age value is greater than or equal to 18 <br>")
+// }
+
+// // LESS THAN EQUAL TO 
+// if (studentAge <= 18) {
+//     document.write("Student age value is less than or equal to 18 <br>")
+// }
+
+
+
+// ''---- LOGICAL OPERATORTS IN JAVA SCRIPT ''
+
+// && - AND
+// || - OR 
+// ! - NOT
+
+// LOGICAL AND OPERATOR
+// var studentAge = 20;
+// var studentGenedar = "F" /*M for male */
+
+// if ( ( studentAge >= 18 ) && ( studentGenedar == "M" ) ) {
+//     document.write("Student age is greater than or equal to 18 and student genedar is male <br>");
+// }
+
+// // LOGICAL OR OPERATOR
+
+// var studentGenedar = "F" /*M for male */
+
+// if ( ( studentAge >= 18 ) || ( studentGenedar == "M" ) ) {
+//     document.write("Student age is greater than or equal to 18 OR student genedar is male <br>");
+// }
+
+// // LOGICAL NOT OPERATOR
+
+// if (! ( studentAge > 18 )) {
+//     document.write('Student age is less than 18');
+// }
+
+// TEST (Scrieți un program JavaScript pentru a găsi cel mai mare număr dintre trei numere. Afișați tasta
+//     numărul cel mai mare folosind document.write.  NUMERE = 15 ,7, 3)  
+
+// var x = 15, y = 7, z = 3;
+
+// if ( ( x > y ) && (y > z) ) {
+//     document.write("the largest number is" + x );
+// } else if ( (x > y) && (y > z)) {
+//    document.write('the largest number' + y );
+// } else {
+//     document.write("the largest number is" + z );
+// }
+
+//------------ SWITCH (intrerupator) OPERATOR
+
+// var studentGrade = "B";
+
+// if( studentGrade == "A") {
+//     document.write("Grade A student");
+// } else if (studentGrade == "B") {
+//     document.write("Grade B student");
+// } else if ( studentGrade == "C") {
+//     document.write("Grade C student");
+// } else {
+//     document.write("NO GRADE FOUND");
+// };
+
+// switch ( studentGrade ) {
+    
+//     case "A":
+//         document.write("Studen with grade A <br>");
+//         break;
+//     case "B":
+//         document.write("Studen with grade B <br>");
+//         break;
+//     case "C":
+//         document.write("Studen with grade C <br>");
+//         break;
+//     default:
+//         document.write("No data found");
+// }
+
+
+
+// LOOPS JAVASCRIPT  
+// document.write('While Loop <br>');
+// var x = 1;
+
+// while ( x <= 5) {
+//     document.write(x + '<br>');
+
+//     x++;
+// }
+
+// document.write('Do while Loop <br>');
+// var y = 6;
+
+// do {
+
+//     document.write(y + '<br>');
+//     y++;
+
+// } while ( y <= 5);
+
+
+// document.write('FOR Loop <br>');
+
+// for ( z = 1; z <= 5; z++ ) {
+//     document.write(z + '<br>');
+// }
+
+
+// Scrieți un cod JavaScript pentru buclă care va itera de la 0 la 10. În fiecare iterație, verificați dacă
+// numar curent. dacă numărul curent este par, afișați „X este par” sau dacă este impar, afișați „X este
+// Ciudat ”. Utilizați document.write pentru afișare.
+
+// for ( var z = 0; z <= 10; z++ ) {
+      
+//     if ( z === 0 ) {
+      
+//       document.write(z + " is Even <br><br>");
+      
+      
+//     } else if ( z % 2 === 0 ) {
+      
+//       document.write(z + " is Even <br><br>");
+      
+      
+//     } else {
+      
+//       document.write(z + " is Odd <br><br>");
+      
+//     }
+    
+//   }
+
+// document.write(' Break: <br>');
+// var i;
+
+// for ( i = 1; i <= 10; i++) {
+
+//     if ( i == 8) {
+//         break;
+//     }
+    
+   
+//     document.write(i+ '<br>');
+
+// }
+
+// document.write(' Continue: <br>');
+
+// var i;
+
+// for ( i = 1; i <= 10; i++) {
+
+//     if ( i == 5) {
+        
+//         continue;
+//     }
+    
+   
+//     document.write(i+ '<br>');
+
+// }
+
+
+
+// function myFirstFunction() {
+
+//     document.write("code execution inside function");
+// }
+
+// myFirstFunction();
+
+// ---JAVA SCRIPT FUNCTIONS WITH PARAMETERS & RETURN
+
+// FUNCTION WITH PARAMETERS
+
+// function functionWithParameters (p1, p2) {
+
+//     var z = p1 * p2;
+
+//     document.write("p1 * p2 = " + z + "<br>")
+// }
+
+// functionWithParameters (10, 20);
+
+// accept function as value
+
+// function parameterAsFunction (func) {
+
+//     func();
+
+// }
+
+// parameterAsFunction(helloWorld);
+
+// function helloWorld() {
+//     alert("Hello World! Function passed as an argument.");
+// }
+
+// function with return statment
+
+// function returnSum (x, y) {
+//     var z = x + y;
+
+//     return z;
+// }
+
+// var result =  returnSum(10, 20);
+
+// document.write('Return value:' + result);
+
+// document.write('Returned value:' + returnSum(10, 20));
+
+// --- Function as variable & anonymous function
+
+// function sum(x, y) {
+
+//     return (x + y);
+
+// }
+
+// assign a function to a variable
+
+// var s = sum;
+
+// var r = s(10, 20);
+
+// document.write(r + "<br>");
+
+
+// define function without a name 
+// anonymous function
+
+// var isAdult = function(age) {
+
+//     if ( age >= 18) {
+
+//         return "yes";
+
+//     } else {
+
+//         return "No";
+//     }
+// };
+
+// var k = isAdult(25);
+
+// document.write("adult status:" + k);
+
+// -- JAVA SCRIPT SELF EXECUTING ANONYMUS FUNCTION
+// Self executing anonymus function
+
+// (function() {
+
+//     alert("Auto show message.");
+
+// })();
+
+// alternate syntax
+
+// (function () {
+
+//     alert("hello man");
+
+
+// }());
+
+// pass argument to self execution function (trece argumentul la funcția de autoexecutare)
+
+// (function(x, y) {
+
+//     alert("sOME OF X & Y" + (x + y));
+
+// })(10, 20);
+
+
+// Self executing function with return
+
+// var sum =  (function(x, y) {
+
+//     return (x + y);
+
+// })(10, 50);
+
+// alert("Returned Sum:" + sum);
+
+
+// global scope
+var x = 20;
+
+function myFunction1() {
+
+    // alert("x =" + x + "accesed inside of a function");
+
+
+}
+
+myFunction1();
+
+// alert("x = " + x + "accesed outside of a function");
+
+
+function  myFunction2() {
+
+    // local scope variable
+    var y = 50;
+
+    document.write("y = " + y + "accessed inside of a function")
+
+}
+myFunction2();
+
+// document.write("y = " + y + "outside of a function")
+
+function  myFunction3() {
+
+    // automatically global - just by initialization
+    var z = 100;
+
+    document.write("z = " + z + "accessed inside of a function")
+
+}
+myFunction3();
 
 
 
